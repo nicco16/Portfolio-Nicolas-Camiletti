@@ -1,0 +1,403 @@
+
+
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-image: url("images/fondo2.jpg");
+  color: #ffffff;
+  line-height: 1.6;
+  overflow-x: hidden; /* Asegura que no haya desbordamiento horizontal */
+}
+p{
+  font-size: medium;
+
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Pacifico', cursive; /* Fuente estilo graffiti */
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+/* Barra de navegación */
+.navbar {
+  background-image: url("images/fondo2.jpg");
+  padding: 1rem 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  color: rgb(255, 255, 255);
+  font-size: 1.8rem;
+  font-family: 'Pacifico', cursive;
+}
+
+.navbar-nav .nav-link {
+  color: rgb(247, 241, 241);
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  padding: 10px 20px;
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: rgb(21, 21, 91);
+  color: white;
+  border-radius: 4px;
+}
+
+/* Sección Principal */
+#home {
+  color: #d4d4d4;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: rgb(6, 6, 6);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 100%; /* Limita el ancho de la sección */
+  overflow: hidden;
+}
+
+.imagen-pequena {
+  align-items: center;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+}
+
+.imagen-pequena img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  align-items: center;
+  
+}
+
+.overlay h1 {
+  font-size: 3rem;
+  margin: 10px 0;
+  font-family: 'Pacifico', cursive;
+}
+
+.overlay p {
+  font-size: 1.2rem;
+}
+
+.overlay .btn {
+  background-color: #f6f2ee;
+  color: black;
+  border: none;
+  padding: 10px 25px;
+  font-size: 1.1rem;
+  margin-top: 20px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.overlay .btn:hover {
+  background-color: #656669;
+}
+
+
+/* Sección: Descripción */
+#Descripcion {
+  position: relative;
+  padding: 50px 20px;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+ 
+  overflow: hidden; /* Esto asegura que el pseudoelemento no se desborde */
+}
+
+#Descripcion::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("images/fondo2.jpg");
+  background-size: cover;
+  filter: blur(8px); /* Desenfoque de la imagen */
+  z-index: -1; /* Pone la imagen detrás del contenido */
+}
+
+#Descripcion h2 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 2rem;
+  color: #fff8f8;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#Descripcion p {
+  font-family: cursive;
+  font-size: 1.5rem;
+  color: #ffe7e7;
+  line-height: 1.7;
+  text-align: center;
+}
+
+
+
+
+
+
+/* Sección: Estudios */
+#Estudios {
+  border-radius: 50px;
+  background-image: url("images/fondo2.jpg");
+  padding: 60px 20px;
+}
+
+#Estudios h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 4rem;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#Estudios h4 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1.4rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+#Estudios ul {
+  font-size: 1.4rem;
+  list-style-type: none;
+  padding-left: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#Estudios ul li {
+  font-size: 1.1rem;
+  color: #f6f6f6;
+  margin-bottom: 10px;
+}
+
+/* Sección: Habilidades */
+#skills {
+  background-image: url("images/fondo2.jpg");
+  align-items: center;
+  color: #f6f2ee;
+  padding: 60px 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#skills h2 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 4rem;
+  text-align: center;
+  color: #f9f9f9;
+  margin-bottom: 40px;
+}
+/* Aseguramos que los elementos de la sección estén uno al lado del otro */
+#skills .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+/* Mejoras generales para las imágenes */
+#skills .d-flex img {
+ width: 50px;
+ height: 50px;
+ border-radius: 30%;
+ height: max-content; /* Mantener la proporción de la imagen */
+}
+
+/* Aseguramos que cada div de habilidades tenga un tamaño de 50% en pantallas grandes */
+#skills .col-md-6 {
+  flex: 0 0 50%; /* Ajuste del 48% de ancho */
+  padding: 0 10px;
+}
+
+
+
+#skills img:hover {
+  transform: scale(1.1);
+}
+
+/* Sección: Experiencia */
+#Experiencia {
+  border-radius: 30px;
+  background-image: url("images/fondo2.jpg");
+  padding: 60px 20px;
+}
+
+#Experiencia h2 {
+  color: #f6f2ee;
+  font-size: 2rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#Experiencia ul {
+  color: #f0f9ff;
+ 
+  text-align: center;
+  list-style-type: none;
+  padding-left: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+#Experiencia ul li {
+  font-size: 1.1rem;
+
+  margin-bottom: 10px;
+}
+
+/* Sección: Contacto */
+#contact {
+  display: grid;
+  place-items: center;
+
+  padding: 50px 20px;
+}
+
+#contact h2{
+  color: white;
+  text-align: center;
+}
+#contact p {
+  text-align: center;
+  color: white;
+}
+.form-social-container {
+ justify-content: space-between;
+  gap: 30px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.social-icon {
+  background-color: blue;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+ 
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+/* Footer */
+footer {
+  background-image: url("images/fondo2.jpg");
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Estilo predeterminado para pantallas grandes */
+#skills .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#skills .col-md-6 {
+  flex: 0 0 48%; /* Ocupa 48% del ancho en pantallas grandes */
+  padding: 0 10px;
+}
+
+/* Ajustes a las imágenes en la sección de habilidades */
+#skills .d-flex img {
+  margin-right: 10px;
+  max-width: 60px;  /* Tamaño máximo de las imágenes */
+  height: auto;     /* Mantener la proporción */
+}
+
+/* Media Query para pantallas medianas (tabletas en orientación horizontal) */
+@media (max-width: 992px) {
+  #skills .row {
+      flex-direction: column; /* Apilar los elementos verticalmente */
+      align-items: center;
+  }
+
+  #skills .col-md-6 {
+      flex: 0 0 100%;  /* Cada columna ocupará el 100% del ancho */
+      padding: 10px 0; /* Agregar espacio entre las secciones */
+  }
+
+  #skills .d-flex {
+      flex-wrap: wrap; /* Las imágenes se ajustan al espacio */
+      justify-content: center;
+  }
+
+  #skills .d-flex img {
+      margin-right: 15px;
+      max-width: 50px; /* Reducir el tamaño de las imágenes en tabletas */
+  }
+}
+
+/* Media Query para pantallas pequeñas (móviles) */
+@media (max-width: 576px) {
+  #skills .row {
+      flex-direction: column; /* Apilar los elementos verticalmente */
+      align-items: center;
+  }
+
+  #skills .col-md-6 {
+      flex: 0 0 100%;  /* Cada columna ocupará el 100% del ancho */
+      padding: 10px 0; /* Agregar espacio entre las secciones */
+  }
+
+  #skills h4 {
+      text-align: center; /* Centrar los títulos */
+  }
+
+  #skills .d-flex img {
+      margin-right: 10px;
+      max-width: 40px; /* Reducir aún más el tamaño de las imágenes en móviles */
+  }
+}
+
+/* Media Query para pantallas muy grandes (escritorios grandes) */
+@media (min-width: 1200px) {
+  #skills .col-md-6 {
+      flex: 0 0 48%; /* Asegurar que las columnas mantengan su tamaño en pantallas grandes */
+  }
+}
+
